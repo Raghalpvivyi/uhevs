@@ -4,13 +4,13 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth
 import { getDatabase } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js";
 
 const firebaseConfig = {
-apiKey: "PUT_API_KEY",
-authDomain: "PUT_DOMAIN",
-databaseURL: "PUT_DATABASE_URL",
-projectId: "PUT_PROJECT_ID",
-storageBucket: "PUT_BUCKET",
-messagingSenderId: "PUT_MSG_ID",
-appId: "PUT_APP_ID"
+apiKey: "AIzaSyDyj2ybL165K43axbWyBACNtxD9KfPHKfE",
+authDomain: "muhaybis-game.firebaseapp.com",
+databaseURL: "https://muhaybis-game-default-rtdb.firebaseio.com",
+projectId: "muhaybis-game",
+storageBucket: "muhaybis-game.firebasestorage.app",
+messagingSenderId: "416411883351",
+appId: "1:416411883351:web:154c36f7273301615a9012"
 };
 
 const app = initializeApp(firebaseConfig);
