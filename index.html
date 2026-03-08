@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لعبة المحيبس - أونلاين</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="mobile-like">
+
+<!-- شاشة الدخول -->
+<div id="screen-login" class="screen active">
+  <div class="login-container">
+    <h1 class="title">🎮 لعبة المحيبس</h1>
+    <div class="card">
+      <input id="input-name" type="text" placeholder="اكتب اسمك هنا" maxlength="18">
+      <div class="buttons-row">
+        <button id="btn-create" class="btn">إنشاء غرفة</button>
+        <button id="btn-join" class="btn">انضم لغرفة</button>
+      </div>
+      <input id="input-room" type="text" placeholder="أدخل رمز الغرفة" maxlength="6">
+    </div>
+  </div>
+</div>
+
+<!-- شاشة الغرفة -->
+<div id="screen-room" class="screen">
+  <header class="topbar">
+    <div id="room-code">رمز الغرفة: <span id="room-code-span">----</span></div>
+    <button id="btn-start" class="btn">بدء اللعبة</button>
+  </header>
+
+  <main class="container">
+    <!-- قائمة اللاعبين -->
+    <div class="card">
+      <h3>اللاعبون</h3>
+      <div id="players-list" class="players-list"></div>
+    </div>
+
+    <!-- لوحة النقاط -->
+    <div class="card score-card">
+      <h3>النقاط</h3>
+      <div class="score-row">
+        <span>الباحث: <span id="score-search">0</span></span>
+        <span>المخفي: <span id="score-hidden">0</span></span>
+      </div>
+    </div>
+
+    <!-- الدردشة -->
+    <div class="card chat-card">
+      <h3>الدردشة</h3>
+      <div id="chat-public" class="chat-box"></div>
+      <div class="chat-input-row">
+        <input id="chat-msg" type="text" placeholder="رسالة">
+        <button id="send-chat" class="btn">إرسال</button>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Footer للمطور -->
+<footer class="footer">
+  <div>مطور اللعبة: راغب علي</div>
+  <div>حساب تيليجرام: <a href="https://t.me/xd_8z" target="_blank">@xd_8z</a></div>
+</footer>
+
+<script type="module" src="firebase-config.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
